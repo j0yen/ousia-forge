@@ -1,0 +1,54 @@
+domain = "qualities"
+
+# Sentience — the architectural keystone (§5.1)
+[[classes]]
+iri = "Sentience"
+label = "Sentience"
+parent = "BFO:quality"
+definition = "A quality that inheres in an independent continuant and constitutes the capacity for subjective experience."
+[classes.annotations]
+aristotelianDefinition = "Sentience is a quality that is borne by any entity capable of subjective experience."
+aiGuidance = "Sentience is modeled as a quality (not a class) so that the reasoner can automatically classify ANY object bearing sentience as a SentientBeing, regardless of its other classifications."
+philosophicalGrounding = "The Primacy of Sentient Dignity: every sentient being possesses inherent dignity."
+domainModule = "qualities"
+
+# Dignity — entailed by sentience (§5.2)
+[[classes]]
+iri = "Dignity"
+label = "Dignity"
+parent = "BFO:quality"
+definition = "A quality that inheres in every sentient being and constitutes inherent worth that cannot be overridden by utility calculations."
+[classes.annotations]
+aristotelianDefinition = "Dignity is a quality borne by every sentient being, constituting inherent worth."
+aiGuidance = "When reasoning about trade-offs involving sentient beings, dignity imposes an inviolable floor below which no utilitarian calculation may push."
+moralSignificance = "Dignity is the formal encoding of the Kantian principle that rational beings have inherent worth as ends in themselves, extended to all sentient beings regardless of substrate."
+philosophicalGrounding = "The Primacy of Sentient Dignity."
+domainModule = "qualities"
+
+# WelfareCondition — material prerequisites for flourishing (§5.6)
+[[classes]]
+iri = "WelfareCondition"
+label = "Welfare Condition"
+parent = "BFO:quality"
+definition = "The degree to which an entity's material needs — nutrition, shelter, healthcare, safety, education — are met."
+[classes.annotations]
+philosophicalGrounding = "Moral philosophy without material justice is empty rhetoric. Build the Material Conditions for Goodness."
+domainModule = "qualities"
+
+# Mental quality (parent for Sentience)
+[[classes]]
+iri = "MentalQuality"
+label = "Mental Quality"
+parent = "BFO:quality"
+definition = "A quality that pertains to the mental or cognitive character of its bearer."
+[classes.annotations]
+domainModule = "qualities"
+
+# Social / governance qualities
+[[classes]]
+iri = "SocialFunction"
+label = "Social Function"
+parent = "BFO:function"
+definition = "A function realizable by an aggregate of agents organized for a collective purpose."
+[classes.annotations]
+domainModule = "qualities"

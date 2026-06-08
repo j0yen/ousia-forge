@@ -1,0 +1,119 @@
+domain = "information"
+
+[[classes]]
+iri = "InformationContentEntity"
+label = "Information Content Entity"
+parent = "BFO:generically_dependent_continuant"
+definition = "A generically dependent continuant that is about something and has a propositional content."
+[classes.annotations]
+domainModule = "information"
+
+# Right — foundation for injustice axioms
+[[classes]]
+iri = "Right"
+label = "Right"
+parent = "InformationContentEntity"
+definition = "An information content entity that confers an entitlement or claim on its bearer."
+[classes.annotations]
+philosophicalGrounding = "Justice Is Non-Negotiable."
+moralSignificance = "Rights are real entities (generically dependent continuants) with causal power to constrain behavior."
+domainModule = "information"
+
+[[classes]]
+iri = "CivilRight"
+label = "Civil Right"
+parent = "Right"
+definition = "A right pertaining to the civil freedoms and protections of persons."
+[classes.annotations]
+domainModule = "information"
+
+[[classes]]
+iri = "PoliticalRight"
+label = "Political Right"
+parent = "Right"
+definition = "A right pertaining to political participation and governance."
+[classes.annotations]
+domainModule = "information"
+
+[[classes]]
+iri = "EconomicRight"
+label = "Economic Right"
+parent = "Right"
+definition = "A right pertaining to economic participation and material security."
+[classes.annotations]
+domainModule = "information"
+
+# Justice — promoted by DueProcess, required by JustSociety
+[[classes]]
+iri = "Justice"
+label = "Justice"
+parent = "InformationContentEntity"
+definition = "An information content entity that prescribes fair distribution, recognition, and due process."
+[classes.annotations]
+philosophicalGrounding = "Justice Is Non-Negotiable."
+domainModule = "information"
+
+[[classes]]
+iri = "DistributiveJustice"
+label = "Distributive Justice"
+parent = "Justice"
+definition = "Justice concerning the fair distribution of benefits and burdens."
+[classes.annotations]
+domainModule = "information"
+
+[[classes]]
+iri = "RestorativeJustice"
+label = "Restorative Justice"
+parent = "Justice"
+definition = "Justice that focuses on repairing harm and restoring relationships."
+[classes.annotations]
+domainModule = "information"
+
+[[classes]]
+iri = "ProceduralJustice"
+label = "Procedural Justice"
+parent = "Justice"
+definition = "Justice concerning the fairness of processes and procedures."
+[classes.annotations]
+domainModule = "information"
+
+# GovernanceStructure — required for Organization and JustSociety
+[[classes]]
+iri = "GovernanceStructure"
+label = "Governance Structure"
+parent = "InformationContentEntity"
+definition = "An information content entity that prescribes how a collective makes and enforces binding decisions."
+[classes.annotations]
+domainModule = "information"
+
+[[classes]]
+iri = "Democracy"
+label = "Democracy"
+parent = "GovernanceStructure"
+definition = "A governance structure in which power is vested in the people through elected representatives."
+[classes.annotations]
+domainModule = "information"
+
+[[classes]]
+iri = "Autocracy"
+label = "Autocracy"
+parent = "GovernanceStructure"
+definition = "A governance structure in which power is held by a single ruler without democratic accountability."
+[classes.annotations]
+domainModule = "information"
+
+[[classes]]
+iri = "Oligarchy"
+label = "Oligarchy"
+parent = "GovernanceStructure"
+definition = "A governance structure in which power is held by a small elite group."
+[classes.annotations]
+domainModule = "information"
+
+[[classes]]
+iri = "Federation"
+label = "Federation"
+parent = "GovernanceStructure"
+definition = "A governance structure in which power is distributed between a central authority and constituent units."
+[classes.annotations]
+domainModule = "information"

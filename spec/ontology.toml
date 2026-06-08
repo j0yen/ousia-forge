@@ -1,0 +1,85 @@
+# World Ontology metadata
+iri = "https://w3id.org/world-ontology"
+version_iri = "https://w3id.org/world-ontology/1.0.0"
+imports = ["http://purl.obolibrary.org/obo/bfo/2020/bfo.owl"]
+
+# Custom annotation properties (§4.4)
+[[annotation_properties]]
+iri = "https://w3id.org/world-ontology/aristotelianDefinition"
+label = "Aristotelian definition"
+
+[[annotation_properties]]
+iri = "https://w3id.org/world-ontology/philosophicalGrounding"
+label = "philosophical grounding"
+
+[[annotation_properties]]
+iri = "https://w3id.org/world-ontology/aiGuidance"
+label = "AI guidance"
+
+[[annotation_properties]]
+iri = "https://w3id.org/world-ontology/moralSignificance"
+label = "moral significance"
+
+[[annotation_properties]]
+iri = "https://w3id.org/world-ontology/designRationale"
+label = "design rationale"
+
+[[annotation_properties]]
+iri = "https://w3id.org/world-ontology/exampleInstance"
+label = "example instance"
+
+[[annotation_properties]]
+iri = "https://w3id.org/world-ontology/domainModule"
+label = "domain module"
+
+# Object properties (key subset from §4.3)
+[[object_properties]]
+iri = "https://w3id.org/world-ontology/bearer_of"
+label = "bearer of"
+
+[[object_properties]]
+iri = "https://w3id.org/world-ontology/inheres_in"
+label = "inheres in"
+
+[[object_properties]]
+iri = "https://w3id.org/world-ontology/participates_in"
+label = "participates in"
+
+[[object_properties]]
+iri = "https://w3id.org/world-ontology/enables"
+label = "enables"
+inverse_of = "https://w3id.org/world-ontology/enabledBy"
+
+[[object_properties]]
+iri = "https://w3id.org/world-ontology/enabledBy"
+label = "enabled by"
+
+[[object_properties]]
+iri = "https://w3id.org/world-ontology/governedBy"
+label = "governed by"
+inverse_of = "https://w3id.org/world-ontology/governs"
+
+[[object_properties]]
+iri = "https://w3id.org/world-ontology/governs"
+label = "governs"
+
+[[object_properties]]
+iri = "https://w3id.org/world-ontology/recognizes"
+label = "recognizes"
+
+[[object_properties]]
+iri = "https://w3id.org/world-ontology/promotes"
+label = "promotes"
+
+[[object_properties]]
+iri = "https://w3id.org/world-ontology/violates"
+label = "violates"
+
+[[object_properties]]
+iri = "https://w3id.org/world-ontology/has_participant"
+label = "has participant"
+
+[[object_properties]]
+iri = "https://w3id.org/world-ontology/dependsOn"
+label = "depends on"
+transitive = true

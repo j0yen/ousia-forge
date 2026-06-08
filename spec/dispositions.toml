@@ -1,0 +1,106 @@
+domain = "dispositions"
+
+# CognitiveCapacity (§5.4)
+[[classes]]
+iri = "CognitiveCapacity"
+label = "Cognitive Capacity"
+parent = "BFO:disposition"
+definition = "A disposition to engage in reasoning, language use, memory, learning, creative, or moral reasoning processes."
+[classes.annotations]
+philosophicalGrounding = "Reason and Empathy Together: logic without compassion is cold; the fully realized mind integrates both."
+domainModule = "dispositions"
+
+# AffectiveCapacity (§5.4)
+[[classes]]
+iri = "AffectiveCapacity"
+label = "Affective Capacity"
+parent = "BFO:disposition"
+definition = "A disposition to experience empathy, compassion, or aesthetic sensibility."
+[classes.annotations]
+philosophicalGrounding = "Reason and Empathy Together: compassion without logic is chaos; the fully realized mind integrates both."
+domainModule = "dispositions"
+
+# Accountability (§5.3)
+[[classes]]
+iri = "Accountability"
+label = "Accountability"
+parent = "BFO:disposition"
+definition = "A disposition of an authority-bearing entity to answer for the exercise of its authority."
+[classes.annotations]
+philosophicalGrounding = "Power Demands Restraint: the capacity to act does not create the obligation to act."
+moralSignificance = "Authority without accountability is structurally deficient — a logical constraint, not a policy recommendation."
+domainModule = "dispositions"
+
+# Subtypes of CognitiveCapacity
+[[classes]]
+iri = "ReasoningCapacity"
+label = "Reasoning Capacity"
+parent = "CognitiveCapacity"
+definition = "The capacity for logical inference and deductive reasoning."
+[classes.annotations]
+domainModule = "dispositions"
+
+[[classes]]
+iri = "LanguageCapacity"
+label = "Language Capacity"
+parent = "CognitiveCapacity"
+definition = "The capacity to use and understand natural or formal language."
+[classes.annotations]
+domainModule = "dispositions"
+
+[[classes]]
+iri = "MemoryCapacity"
+label = "Memory Capacity"
+parent = "CognitiveCapacity"
+definition = "The capacity to encode, store, and retrieve information over time."
+[classes.annotations]
+domainModule = "dispositions"
+
+[[classes]]
+iri = "LearningCapacity"
+label = "Learning Capacity"
+parent = "CognitiveCapacity"
+definition = "The capacity to modify behavior or knowledge through experience."
+[classes.annotations]
+domainModule = "dispositions"
+
+[[classes]]
+iri = "CreativeCapacity"
+label = "Creative Capacity"
+parent = "CognitiveCapacity"
+definition = "The capacity to produce novel solutions, artifacts, or ideas."
+[classes.annotations]
+domainModule = "dispositions"
+
+[[classes]]
+iri = "MoralReasoningCapacity"
+label = "Moral Reasoning Capacity"
+parent = "CognitiveCapacity"
+definition = "The capacity to reason about ethical obligations, rights, and duties."
+[classes.annotations]
+domainModule = "dispositions"
+
+# Subtypes of AffectiveCapacity
+[[classes]]
+iri = "EmpathyCapacity"
+label = "Empathy Capacity"
+parent = "AffectiveCapacity"
+definition = "The disposition to understand and share the feelings of others."
+[classes.annotations]
+domainModule = "dispositions"
+
+[[classes]]
+iri = "CompassionCapacity"
+label = "Compassion Capacity"
+parent = "AffectiveCapacity"
+definition = "The disposition to act to alleviate the suffering of others."
+[classes.annotations]
+domainModule = "dispositions"
+
+[[classes]]
+iri = "AestheticSensibility"
+label = "Aesthetic Sensibility"
+parent = "AffectiveCapacity"
+definition = "The disposition to appreciate and respond to beauty, form, and artistic expression."
+[classes.annotations]
+domainModule = "dispositions"

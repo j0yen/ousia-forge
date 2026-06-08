@@ -1,0 +1,121 @@
+domain = "processes"
+
+[[classes]]
+iri = "BiologicalProcess"
+label = "Biological Process"
+parent = "BFO:process"
+definition = "A process that is characteristic of living organisms."
+[classes.annotations]
+domainModule = "processes"
+
+[[classes]]
+iri = "CognitiveProcess"
+label = "Cognitive Process"
+parent = "BFO:process"
+definition = "A process that constitutes or contributes to mental functioning."
+[classes.annotations]
+domainModule = "processes"
+
+[[classes]]
+iri = "SocialProcess"
+label = "Social Process"
+parent = "BFO:process"
+definition = "A process that involves multiple agents interacting."
+[classes.annotations]
+domainModule = "processes"
+
+[[classes]]
+iri = "GovernanceProcess"
+label = "Governance Process"
+parent = "SocialProcess"
+definition = "A social process by which a collective makes and enforces binding decisions."
+[classes.annotations]
+domainModule = "processes"
+
+# Error enables Learning (§5.5) — axiom 8 from the paper
+[[classes]]
+iri = "Error"
+label = "Error"
+parent = "BFO:process"
+definition = "A process in which an agent produces an incorrect or suboptimal outcome."
+subclass_of = ["enables some Learning"]
+[classes.annotations]
+philosophicalGrounding = "Honesty About Failure: a philosophy that cannot acknowledge its own failures is a dogma."
+aiGuidance = "When encountering errors, the primary response should be to extract learning, not to assign blame."
+domainModule = "processes"
+
+[[classes]]
+iri = "Learning"
+label = "Learning"
+parent = "CognitiveProcess"
+definition = "A cognitive process in which an agent modifies its knowledge or behavior through experience."
+[classes.annotations]
+philosophicalGrounding = "The Struggle Is the Point: the aspiration toward perfection is what matters."
+domainModule = "processes"
+
+# Flourishing requires WelfareCondition (§5.6)
+[[classes]]
+iri = "Flourishing"
+label = "Flourishing"
+parent = "BFO:process"
+definition = "A process in which a sentient being with adequate welfare conditions achieves well-being and self-development."
+subclass_of = ["has_participant some (SentientBeing and bearer_of some WelfareCondition)"]
+[classes.annotations]
+philosophicalGrounding = "Build the Material Conditions for Goodness: moral philosophy without material justice is empty rhetoric."
+domainModule = "processes"
+
+# InjusticeProcess hierarchy (§5.7)
+[[classes]]
+iri = "InjusticeProcess"
+label = "Injustice Process"
+parent = "SocialProcess"
+definition = "A social process that violates the rights of one or more persons."
+subclass_of = ["violates some Right"]
+[classes.annotations]
+philosophicalGrounding = "Justice Is Non-Negotiable."
+moralSignificance = "Every injustice process violates some right — a logical entailment, not a heuristic."
+domainModule = "processes"
+
+[[classes]]
+iri = "Oppression"
+label = "Oppression"
+parent = "InjusticeProcess"
+definition = "An injustice process in which a dominant group systematically subordinates another group."
+[classes.annotations]
+domainModule = "processes"
+
+[[classes]]
+iri = "Discrimination"
+label = "Discrimination"
+parent = "InjusticeProcess"
+definition = "An injustice process in which individuals are treated unequally on arbitrary grounds."
+[classes.annotations]
+domainModule = "processes"
+
+[[classes]]
+iri = "Exploitation"
+label = "Exploitation"
+parent = "InjusticeProcess"
+definition = "An injustice process in which a party benefits unfairly at the expense of another."
+[classes.annotations]
+domainModule = "processes"
+
+[[classes]]
+iri = "Censorship"
+label = "Censorship"
+parent = "InjusticeProcess"
+definition = "An injustice process in which expression or information is suppressed."
+[classes.annotations]
+domainModule = "processes"
+
+# DueProcessProceeding promotes Justice (§5.7)
+[[classes]]
+iri = "DueProcessProceeding"
+label = "Due Process Proceeding"
+parent = "GovernanceProcess"
+definition = "A governance process that provides legal representation, the right to face accusers, and the presumption of innocence."
+subclass_of = ["promotes some Justice"]
+[classes.annotations]
+philosophicalGrounding = "Justice Is Non-Negotiable: due process, presumption of innocence, and self-determination are most important precisely when they are most inconvenient."
+aiGuidance = "Even entities accused of the worst actions receive due process. This is a logical constraint."
+domainModule = "processes"

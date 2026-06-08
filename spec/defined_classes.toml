@@ -1,0 +1,80 @@
+domain = "defined_classes"
+
+# SentientBeing ≡ BFO:object ∧ bearer_of some Sentience (§6.1)
+# Also: SentientBeing SubClassOf bearer_of some Dignity (§5.2)
+[[classes]]
+iri = "SentientBeing"
+label = "Sentient Being"
+parent = "BFO:object"
+definition = "Any object that bears the quality of sentience and therefore inherent dignity."
+equivalent_to = "BFO:object and bearer_of some Sentience"
+subclass_of = ["bearer_of some Dignity"]
+[classes.annotations]
+aristotelianDefinition = "A SentientBeing is a BFO:object that bears Sentience."
+aiGuidance = "SentientBeing is substrate-independent: a human, robot, extraterrestrial, or AI system bearing Sentience is automatically classified as SentientBeing."
+philosophicalGrounding = "The Primacy of Sentient Dignity."
+moralSignificance = "The classification is a logical entailment, not a heuristic. Dignity follows automatically."
+domainModule = "defined_classes"
+
+# Person ≡ SentientBeing ∧ bearer_of some PersonRole (§6.2)
+[[classes]]
+iri = "Person"
+label = "Person"
+parent = "SentientBeing"
+definition = "A sentient being who bears the social role of personhood with associated rights and legal standing."
+equivalent_to = "SentientBeing and bearer_of some PersonRole"
+[classes.annotations]
+aristotelianDefinition = "A Person is a SentientBeing that bears a PersonRole."
+aiGuidance = "Person requires both moral status (Sentience → SentientBeing) and social recognition (PersonRole). A sentient entity without recognized PersonRole has dignity but not legal personhood."
+philosophicalGrounding = "Justice Is Non-Negotiable: due process and self-determination."
+domainModule = "defined_classes"
+
+# Agent ≡ BFO:object ∧ bearer_of some CognitiveCapacity (§6.3)
+[[classes]]
+iri = "Agent"
+label = "Agent"
+parent = "BFO:object"
+definition = "Any object with cognitive capacity for reasoning and intentional action."
+equivalent_to = "BFO:object and bearer_of some CognitiveCapacity"
+[classes.annotations]
+aristotelianDefinition = "An Agent is a BFO:object that bears CognitiveCapacity."
+aiGuidance = "Agent does not require Sentience. A sophisticated non-sentient planning system is an Agent but not a SentientBeing."
+domainModule = "defined_classes"
+
+# Organization ≡ BFO:object_aggregate ∧ bearer_of some SocialFunction ∧ governedBy some GovernanceStructure (§6.4)
+[[classes]]
+iri = "Organization"
+label = "Organization"
+parent = "BFO:object_aggregate"
+definition = "A group of agents with a social purpose and a governance structure."
+equivalent_to = "BFO:object_aggregate and bearer_of some SocialFunction and governedBy some GovernanceStructure"
+[classes.annotations]
+aristotelianDefinition = "An Organization is a BFO:object_aggregate that bears SocialFunction and is governed by some GovernanceStructure."
+aiGuidance = "A crowd is an object_aggregate; a corporation is an Organization. The distinction is governance structure and social function."
+domainModule = "defined_classes"
+
+# JustSociety ≡ Organization ∧ governedBy some Democracy ∧ recognizes some Right ∧ promotes some Justice (§6.5)
+[[classes]]
+iri = "JustSociety"
+label = "Just Society"
+parent = "Organization"
+definition = "An organization governed democratically, recognizing rights and actively promoting justice."
+equivalent_to = "Organization and governedBy some Democracy and recognizes some Right and promotes some Justice"
+[classes.annotations]
+aristotelianDefinition = "A JustSociety is an Organization that is governed by Democracy, recognizes Rights, and promotes Justice."
+aiGuidance = "Real societies are complex and often contradictory. JustSociety and UnjustSystem are not declared disjoint — an organization can satisfy both simultaneously."
+philosophicalGrounding = "Justice Is Non-Negotiable: justice requires democratic legitimacy, not merely benevolent autocracy."
+domainModule = "defined_classes"
+
+# UnjustSystem ≡ Organization ∧ participates_in some InjusticeProcess (§6.6)
+[[classes]]
+iri = "UnjustSystem"
+label = "Unjust System"
+parent = "Organization"
+definition = "Any organization that participates in processes of oppression, discrimination, exploitation, or censorship."
+equivalent_to = "Organization and participates_in some InjusticeProcess"
+[classes.annotations]
+aristotelianDefinition = "An UnjustSystem is an Organization that participates_in some InjusticeProcess."
+aiGuidance = "UnjustSystem and JustSociety are not disjoint. An organization can pursue justice through some processes while perpetrating injustice through others."
+philosophicalGrounding = "Honesty About Failure."
+domainModule = "defined_classes"

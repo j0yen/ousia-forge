@@ -1,0 +1,74 @@
+domain = "roles"
+
+# PersonRole (needed for Person defined class §6.2)
+[[classes]]
+iri = "PersonRole"
+label = "Person Role"
+parent = "BFO:role"
+definition = "The social role of being recognized as a person with rights and legal standing."
+[classes.annotations]
+philosophicalGrounding = "Justice Is Non-Negotiable: personhood confers due process and self-determination."
+domainModule = "roles"
+
+# AuthorityRole (§5.3 — authority requires accountability)
+[[classes]]
+iri = "AuthorityRole"
+label = "Authority Role"
+parent = "BFO:role"
+definition = "A role borne by an entity that exercises legitimate power over others."
+subclass_of = ["inheres_in some (BFO:independent_continuant and bearer_of some Accountability)"]
+[classes.annotations]
+philosophicalGrounding = "Power Demands Restraint: the capacity to act does not create the obligation to act."
+aiGuidance = "Any entity bearing AuthorityRole must also bear Accountability. Authority without accountability is structurally deficient."
+moralSignificance = "This encodes the principle that power without accountability is a logical constraint, not merely a policy recommendation."
+domainModule = "roles"
+
+# Subtypes of AuthorityRole (§5.3)
+[[classes]]
+iri = "GovernmentOfficialRole"
+label = "Government Official Role"
+parent = "AuthorityRole"
+definition = "An authority role borne by an elected or appointed government official."
+[classes.annotations]
+domainModule = "roles"
+
+[[classes]]
+iri = "JudicialRole"
+label = "Judicial Role"
+parent = "AuthorityRole"
+definition = "An authority role borne by a judge or judicial officer."
+[classes.annotations]
+domainModule = "roles"
+
+[[classes]]
+iri = "MilitaryCommanderRole"
+label = "Military Commander Role"
+parent = "AuthorityRole"
+definition = "An authority role borne by a military officer with command authority."
+[classes.annotations]
+domainModule = "roles"
+
+[[classes]]
+iri = "CorporateExecutiveRole"
+label = "Corporate Executive Role"
+parent = "AuthorityRole"
+definition = "An authority role borne by an executive of a corporate organization."
+[classes.annotations]
+domainModule = "roles"
+
+[[classes]]
+iri = "RegulatoryRole"
+label = "Regulatory Role"
+parent = "AuthorityRole"
+definition = "An authority role borne by an official of a regulatory body."
+[classes.annotations]
+domainModule = "roles"
+
+# Ecological roles
+[[classes]]
+iri = "EcologicalRole"
+label = "Ecological Role"
+parent = "BFO:role"
+definition = "A role played by an organism in an ecological community."
+[classes.annotations]
+domainModule = "roles"

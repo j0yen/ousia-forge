@@ -1,0 +1,28 @@
+[package]
+name = "ousia-forge"
+version = "0.1.0"
+edition = "2021"
+rust-version = "1.85"
+description = "OWL 2 DL world ontology builder from declarative TOML spec"
+license = "MIT"
+
+[[bin]]
+name = "ousia-forge"
+path = "src/main.rs"
+
+[lib]
+name = "ousia_forge"
+path = "src/lib.rs"
+
+[dependencies]
+clap = { version = "4", features = ["derive"] }
+serde = { version = "1", features = ["derive"] }
+toml = "0.8"
+horned-owl = { version = "0.15.0-alpha" }
+thiserror = "1"
+indexmap = { version = "2", features = ["serde"] }
+libc = "0.2"
+
+[dev-dependencies]
+tempfile = "3"
+horned-owl = { version = "0.15.0-alpha" }

@@ -1,0 +1,38 @@
+domain = "organisms"
+
+[[classes]]
+iri = "Organism"
+label = "Organism"
+parent = "BFO:object"
+definition = "A living entity that is a material object with biological processes."
+subclass_of = ["participates_in some BiologicalProcess"]
+[classes.annotations]
+domainModule = "organisms"
+
+[[classes]]
+iri = "Animal"
+label = "Animal"
+parent = "Organism"
+definition = "A multicellular heterotrophic organism."
+[classes.annotations]
+domainModule = "organisms"
+
+[[classes]]
+iri = "Mammal"
+label = "Mammal"
+parent = "Animal"
+definition = "An animal of the class Mammalia, characterized by live birth and nursing young."
+[classes.annotations]
+domainModule = "organisms"
+
+# Human — biological class; sentience and personhood are separate (§7.2)
+[[classes]]
+iri = "Human"
+label = "Human"
+parent = "Mammal"
+definition = "A member of the species Homo sapiens."
+subclass_of = ["bearer_of some CognitiveCapacity", "bearer_of some AffectiveCapacity"]
+[classes.annotations]
+aristotelianDefinition = "A Human is a Mammal that bears both cognitive and affective capacities."
+aiGuidance = "Human is a biological class. Moral status follows from Sentience (a quality), not from biological taxonomy."
+domainModule = "organisms"
