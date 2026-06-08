@@ -31,7 +31,7 @@ iri = "Human"
 label = "Human"
 parent = "Mammal"
 definition = "A member of the species Homo sapiens."
-subclass_of = ["bearer_of some CognitiveCapacity", "bearer_of some AffectiveCapacity"]
+subclass_of = ["bearer_of some CognitiveCapacity", "bearer_of some AffectiveCapacity", "bearer_of some Sentience"]
 [classes.annotations]
 aristotelianDefinition = "A Human is a Mammal that bears both cognitive and affective capacities."
 aiGuidance = "Human is a biological class. Moral status follows from Sentience (a quality), not from biological taxonomy."
